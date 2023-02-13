@@ -32,22 +32,24 @@
               <input
                 type="submit"
                 value="Search"
-                class="form-control shadow-sm"
+                class="form-control"
                 id="search-button"
               />
             </div>
           </div>
         </form>
-        <h1 id="city-default"></h1>
-        <div class="infoTemp">
-          <span id="change-quote"></span>
-          <br />
-          <span class="description" id="description"></span>
-        </div>
 
         <div class="row">
-          <div class="col-6">
-            <div class="clearfix">
+          <div class="col-4">
+            <div class="infoTemp">
+              <div id="city-default">Place</div>
+              <span id="change-quote">Date</span>
+              <br />
+              <span class="description" id="description">Cloudy</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="clearfix" id="icon-grade">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                 alt="sunny"
@@ -61,44 +63,53 @@
               </span>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-4">
             <ul class="info">
               <li>Cloudiness: <span id="cloud"></span>%</li>
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> m/s</li>
             </ul>
           </div>
-          <div class="card" style="width: 10rem" id="card1">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text"></p>
+          <div class="row" id="icon-cards">
+            <div class="card" style="width: 10rem" id="card1">
+              <span class="icondays">.</span>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 10rem" id="card2">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card" style="width: 10rem" id="card2">
+              <span class="icondays">.</span>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 10rem" id="card3">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card" style="width: 10rem" id="card3">
+              <span class="icondays">.</span>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 10rem" id="card4">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="card" style="width: 10rem" id="card4">
+              <span class="icondays">.</span>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>
             </div>
           </div>
         </div>
