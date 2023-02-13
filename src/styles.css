@@ -2,23 +2,15 @@ body {
   font-family: Georgia;
 }
 
-h1 {
-  color: #000000;
-  font-size: 25px;
-  font-weight: 100;
-  line-height: 25px;
-  height: 18px;
-  margin-left: 10px;
-}
-
 a {
   text-decoration: none;
   color: #7c7c7c;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+ul .info {
+  display: block;
+  margin: 0px;
+  padding: 0px;
 }
 
 li {
@@ -36,7 +28,7 @@ li {
   padding: 15px;
   margin: 60px auto;
   border-radius: 10px;
-  max-width: 800px;
+  max-width: 63%;
 }
 
 .searcher {
@@ -44,6 +36,21 @@ li {
   margin-bottom: 10px;
   margin-left: -1px;
   margin-right: 2px;
+}
+
+#city-input {
+  box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
+}
+
+#search-button {
+  box-shadow: 0 0 0 0.3px #a2f3ff, 0.0005em 0.0005em 0.0005em #eafcfe;
+}
+
+#city-default {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 2.4;
 }
 
 .infoTemp {
@@ -56,6 +63,20 @@ li {
   height: 18px;
 }
 
+.icondays {
+  text-align: center;
+  color: #7c7c7c;
+  padding-bottom: 10px;
+}
+
+.card-img-top {
+  width: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 .description {
   color: #7c7c7c;
   font-size: 14px;
@@ -65,41 +86,40 @@ li {
   height: 18px;
 }
 
-.grades {
-  position: relative;
-  font-size: 50px;
-  top: 13px;
-  margin-left: 5px;
-}
-
 .letter {
   position: relative;
   top: -8px;
 }
 
+#icon-grade {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
 #card1 {
   border: 1px solid #acacac;
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 16px;
   border-radius: 15px;
 }
 #card2 {
   border: 1px solid #acacac;
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 16px;
   border-radius: 15px;
 }
 
 #card3 {
   border: 1px solid #acacac;
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 16px;
   border-radius: 15px;
 }
 
 #card4 {
   border: 1px solid #acacac;
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 16px;
   border-radius: 15px;
 }
