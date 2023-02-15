@@ -11,8 +11,8 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Weather</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather</title>
   </head>
 
   <body>
@@ -38,17 +38,18 @@
             </div>
           </div>
         </form>
+
         <div class="row">
           <div class="col-4">
-            <div class="infoTemp">
-              <div id="city-default">Place</div>
-              <span id="change-quote">Date</span>
+            <div class="information-description">
+              <div class="city-default" id="city-default">Place</div>
+              <span class="quote-default" id="change-quote">Date</span>
               <br />
               <span class="description" id="description">Cloudy</span>
             </div>
           </div>
 
-          <div class="col-4">
+          <div class="col-3">
             <div class="d-flex main-temperature">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
@@ -56,63 +57,68 @@
                 class="weather-icon float-left"
               />
               <span class="float-left">
-                <span class="gradesNumber" id="grades">19</span>
-                <span id="main-units">
-                  <a href="#" id="celsius">ºC</a>
-                  <span>|</span>
-                  <a href="#" id="fahrenheit">ºF</a>
+                <span class="default-grades">
+                  <span class="main-grades" id="grades">19</span>
+                  <span id="main-units">
+                    <a href="#" id="celsius">ºC</a>
+                    <span>|</span>
+                    <a href="#" id="fahrenheit">ºF</a>
+                  </span>
                 </span>
               </span>
             </div>
           </div>
 
-          <div class="col-4">
-            <ul class="info-description">
+          <div class="col-5">
+            <ul class="description-forecast">
               <li>Cloudiness: <span id="cloud"></span>%</li>
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> m/s</li>
             </ul>
           </div>
-          <div class="row" id="icon-cards">
-            <div class="card" style="width: 10rem" id="card">
-              <span class="icondays">.</span>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <p class="card-text"></p>
-              </div>
+        </div>
+
+        <div class="weatherForecast row" id="icon-cards">
+          <div class="card" style="width: 10rem" id="card">
+            <span class="icondays">.</span>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <p class="card-text"></p>
             </div>
-            <div class="card" style="width: 10rem" id="card">
-              <span class="icondays">.</span>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <p class="card-text"></p>
-              </div>
+          </div>
+          <div class="card" style="width: 10rem" id="card">
+            <span class="icondays">.</span>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <p class="card-text"></p>
             </div>
-            <div class="card" style="width: 10rem" id="card">
-              <span class="icondays">.</span>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <p class="card-text"></p>
-              </div>
+          </div>
+
+          <div class="card" style="width: 10rem" id="card">
+            <span class="icondays">.</span>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <p class="card-text"></p>
             </div>
-            <div class="card" style="width: 10rem" id="card">
-              <span class="icondays">.</span>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <p class="card-text"></p>
-              </div>
+          </div>
+
+          <div class="card" style="width: 10rem" id="card">
+            <span class="icondays">.</span>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <p class="card-text"></p>
             </div>
           </div>
         </div>
