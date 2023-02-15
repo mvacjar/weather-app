@@ -1,5 +1,6 @@
 body {
   font-family: Georgia;
+  background: linear-gradient(60deg, #a2f3ff 0%, #a2f3ff 100%);
 }
 
 a {
@@ -22,13 +23,16 @@ li {
 }
 
 .box {
-  border: 1px solid #acacac;
-  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 0.5px solid #e7e6e6;
+  box-shadow: 0 0 0 0.3px #499eab, 0.01em 0.01em 0.5em #499eab;
   display: block;
-  padding: 15px;
-  margin: 60px auto;
+  padding: 30px;
+  margin: 100px auto;
   border-radius: 10px;
-  max-width: 63%;
+  box-sizing: content-box;
+  position: relative;
+  width: 100%;
 }
 
 .searcher {
@@ -36,21 +40,6 @@ li {
   margin-bottom: 10px;
   margin-left: -1px;
   margin-right: 2px;
-}
-
-#city-input {
-  box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
-}
-
-#search-button {
-  box-shadow: 0 0 0 0.3px #a2f3ff, 0.0005em 0.0005em 0.0005em #eafcfe;
-}
-
-#city-default {
-  color: #000000;
-  font-size: 25px;
-  font-weight: 100;
-  line-height: 2.4;
 }
 
 .infoTemp {
@@ -64,6 +53,8 @@ li {
 }
 
 .icondays {
+  display: block;
+  line-height: 3;
   text-align: center;
   color: #7c7c7c;
   padding-bottom: 10px;
@@ -91,12 +82,46 @@ li {
   top: -8px;
 }
 
-#icon-grade {
+#city-input:hover,
+#search-button:hover {
+  border-color: #eeecec;
+  box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
+}
+
+#city-default {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 2.4;
+}
+
+#main-icon {
   display: block;
   margin: 10px;
   padding: 10px;
 }
 
+#icon-cards {
+  padding-left: auto;
+  padding-right: -20px;
+  margin: 16px;
+}
+
+#card {
+  margin: 4px;
+  border: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+#card:hover {
+  box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
+  transition: 0.3s;
+}
+
+/*
 #card1 {
   border: 1px solid #acacac;
   padding: 10px;
@@ -123,3 +148,4 @@ li {
   margin: 16px;
   border-radius: 15px;
 }
+*/
