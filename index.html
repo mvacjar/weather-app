@@ -38,7 +38,6 @@
             </div>
           </div>
         </form>
-
         <div class="row">
           <div class="col-4">
             <div class="infoTemp">
@@ -48,23 +47,27 @@
               <span class="description" id="description">Cloudy</span>
             </div>
           </div>
+
           <div class="col-4">
-            <div class="clearfix" id="main-icon">
+            <div class="d-flex main-temperature">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                 alt="sunny"
                 class="weather-icon float-left"
               />
               <span class="float-left">
-                <span class="grades" id="grades"> </span>
-                <a href="#" id="celsius">ºC</a>
-                <span>|</span>
-                <a href="#" id="fahrenheit">ºF</a>
+                <span class="gradesNumber" id="grades">19</span>
+                <span id="main-units">
+                  <a href="#" id="celsius">ºC</a>
+                  <span>|</span>
+                  <a href="#" id="fahrenheit">ºF</a>
+                </span>
               </span>
             </div>
           </div>
+
           <div class="col-4">
-            <ul class="info">
+            <ul class="info-description">
               <li>Cloudiness: <span id="cloud"></span>%</li>
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> m/s</li>
