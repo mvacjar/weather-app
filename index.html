@@ -36,6 +36,14 @@
                 id="search-button"
               />
             </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Current Location"
+                class="form-control"
+                id="current-button"
+              />
+            </div>
           </div>
         </form>
 
@@ -43,7 +51,7 @@
           <div class="col-4">
             <div class="information-description">
               <div class="city-default" id="city-default">Place</div>
-              <span class="quote-default" id="change-quote">Date</span>
+              <span class="quote-default" id="main-date">Date</span>
               <br />
               <span class="description" id="description">Cloudy</span>
             </div>
@@ -55,10 +63,11 @@
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                 alt="sunny"
                 class="weather-icon float-left"
+                id="main-icon"
               />
               <span class="float-left">
                 <span class="default-grades">
-                  <span class="main-grades" id="grades">19</span>
+                  <span class="main-grades" id="main-grades">19</span>
                   <span id="main-units">
                     <a href="#" id="celsius">ºC</a>
                     <span>|</span>
@@ -123,7 +132,13 @@
           </div>
         </div>
       </div>
+      <small class="sign">
+        <a href="https://github.com/mvacjar/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Mvacjar
+      </small>
     </div>
-    <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>

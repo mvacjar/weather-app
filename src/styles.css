@@ -116,11 +116,18 @@ li {
   width: 40%;
 }
 
+.sign {
+  font-family: monospace;
+  font-size: 12px;
+  color: gray;
+}
+
 #card {
   flex: 0 1 24%;
 }
 
-#search-button:hover {
+#search-button:hover,
+#current-button:hover {
   background: #ccf4fa;
 }
 
@@ -130,7 +137,8 @@ li {
 }
 
 #city-input:hover,
-#search-button:hover {
+#search-button:hover,
+#current-button:hover {
   border-color: #eeecec;
   box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
 }
