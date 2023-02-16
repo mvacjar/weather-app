@@ -1,5 +1,5 @@
 body {
-  font-family: Georgia;
+  font-family: arial, sans-serif;
   background: linear-gradient(60deg, #a2f3ff 0%, #a2f3ff 100%);
 }
 
@@ -81,6 +81,15 @@ li {
 #main-units {
   position: fixed;
   margin-left: 70px;
+}
+
+#main-units .active {
+  cursor: default;
+  color: #212121;
+}
+
+#main-units .active:hover {
+  text-decoration: none;
 }
 
 .description-forecast {

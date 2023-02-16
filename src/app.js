@@ -75,12 +75,16 @@ function searchPlace(event) {
 function showFahrenheit(event) {
   event.preventDefault();
   let mainTemperature = document.querySelector(`#grades`);
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   mainTemperature.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function showCelsius(event) {
   event.preventDefault();
+  celsius.classList.add("active");
+  fahrenheit.classList.remove("active");
   let mainTemperature = document.querySelector(`#grades`);
   mainTemperature.innerHTML = Math.round(celsiusTemperature);
 }
