@@ -25,7 +25,7 @@ function getDate(date) {
 
 function displayWeather(response) {
   document.querySelector("#city-default").innerHTML = response.data.name;
-  document.querySelector("#main-grades").innerHTML = Math.round(
+  document.querySelector("#grades").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#cloud").innerHTML = response.data.clouds.all;
@@ -44,6 +44,7 @@ function displayWeather(response) {
   document
     .querySelector(`#main-icon`)
     .setAttribute(`alt`, response.data.weather[0].description);
+  celsiusTemperature = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -71,6 +72,21 @@ function searchPlace(event) {
   searchCity(city);
 }
 
+function showFahrenheit(event) {
+  event.preventDefault();
+  let mainTemperature = document.querySelector(`#grades`);
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  mainTemperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsius(event) {
+  event.preventDefault();
+  let mainTemperature = document.querySelector(`#grades`);
+  mainTemperature.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let currentButton = document.querySelector(`#current-button`);
 currentButton.addEventListener(`click`, currentLocation);
 
@@ -80,5 +96,11 @@ search.addEventListener(`submit`, searchPlace);
 let changeDate = document.querySelector("#main-date");
 let current = new Date();
 changeDate.innerHTML = getDate(current);
+
+let fahrenheit = document.querySelector(`#fahrenheit`);
+fahrenheit.addEventListener(`click`, showFahrenheit);
+
+let celsius = document.querySelector(`#celsius`);
+celsius.addEventListener(`click`, showCelsius);
 
 searchCity("Stockholm");
