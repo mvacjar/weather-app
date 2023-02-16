@@ -24,9 +24,7 @@ function getDate(date) {
 }
 
 function displayWeather(response) {
-  let city = document.querySelector(`#city-default`);
-  city.innerHTML = response.data.city;
-
+  document.querySelector("#city-default").innerHTML = response.data.city;
   document.querySelector("#grades").innerHTML = Math.round(
     response.data.temperature.current
   );

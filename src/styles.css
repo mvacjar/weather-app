@@ -24,7 +24,7 @@ li {
 }
 
 .box {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.75);
   border: 0.5px solid #e7e6e6;
   box-shadow: 0 0 0 0.1px #694620, 0.01em 0.01em 0.5em #6d4a25;
   display: block;
@@ -127,13 +127,28 @@ li {
 }
 
 .sign {
+  position: static;
+  margin-top: -90px;
+  padding: 0 auto;
+  text-align: center;
   font-family: monospace;
-  font-size: 12px;
-  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.linkGH {
+  color: #353535;
 }
 
 #card {
   flex: 0 1 24%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#search-button,
+#current-button {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #search-button:hover,
