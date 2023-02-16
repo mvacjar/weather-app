@@ -1,6 +1,7 @@
 body {
   font-family: arial, sans-serif;
-  background: linear-gradient(60deg, #a2f3ff 0%, #a2f3ff 100%);
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/860/original/grass-7288141_1920.jpg?1676551057)
+    no-repeat center center fixed;
 }
 
 a {
@@ -25,7 +26,7 @@ li {
 .box {
   background-color: #ffffff;
   border: 0.5px solid #e7e6e6;
-  box-shadow: 0 0 0 0.1px #63daec, 0.01em 0.01em 0.5em #63daec;
+  box-shadow: 0 0 0 0.1px #694620, 0.01em 0.01em 0.5em #6d4a25;
   display: block;
   padding: 30px;
   margin: 100px auto;
@@ -137,7 +138,7 @@ li {
 
 #search-button:hover,
 #current-button:hover {
-  background: #ccf4fa;
+  background: #f7fdfd;
 }
 
 #search-button:visited {
