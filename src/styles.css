@@ -104,26 +104,15 @@ li {
 .weatherForecast {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  place-items: center;
+  justify-content: space-around;
   text-align: center;
+  padding-top: 30px;
 }
-
-.icondays {
+.card-img {
+  width: auto;
+  margin: auto;
   display: block;
-  line-height: 3;
-  text-align: center;
-  color: #7c7c7c;
-  padding-bottom: 10px;
-  width: 40px;
-  height: 40px;
-}
-
-.card-img-top {
-  width: 70px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
 }
 
 .sign {
@@ -142,8 +131,13 @@ li {
 }
 
 #card {
-  flex: 0 1 24%;
+  height: 150px;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+#card:hover {
+  box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
+  transition: 0.3s;
 }
 
 #search-button,
@@ -166,24 +160,4 @@ li {
 #current-button:hover {
   border-color: #eeecec;
   box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
-}
-
-#icon-cards {
-  padding-left: auto;
-  padding-right: -20px;
-  margin: 16px;
-}
-
-#card {
-  margin: 4px;
-  border: #ffffff;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-}
-
-#card:hover {
-  box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
-  transition: 0.3s;
 }
