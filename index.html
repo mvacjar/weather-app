@@ -57,91 +57,113 @@
             </div>
           </div>
 
-          <div class="col-3">
-            <div class="d-flex main-temperature">
-              <img
-                src="#"
-                alt="image"
-                class="weather-icon float-left"
-                id="main-icon"
-              />
-              <span class="float-left" id="default-grades">
-                <span class="main-grades" id="grades"></span>
-                <span id="main-units">
-                  <a href="#" class="active" id="celsius">ºC</a>
-                  <span>|</span>
-                  <a href="#" id="fahrenheit">ºF</a>
-                </span>
-              </span>
-            </div>
+          <div class="col-4 main-temperature">
+            <img src="#" width="120px" class="weather-icon" id="main-icon" />
+            <span id="grades"></span>
+            <span id="main-units">
+              <a href="#" class="active" id="celsius">ºC</a>
+              <span>|</span>
+              <a href="#" id="fahrenheit">ºF</a>
+            </span>
           </div>
 
-          <div class="col-5">
-            <ul class="description-forecast">
-              <li>Pressure: <span id="pressure"></span></li>
+          <div class="col-4">
+            <span class="description-forecast">
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> m/s</li>
-            </ul>
+              <li>Pressure: <span id="pressure"></span></li>
+            </span>
           </div>
         </div>
 
-        <div class="weatherForecast row" id="icon-cards">
+        <div class="weather-forecast row" id="icon-cards">
           <div class="card" style="width: 10rem" id="card">
-            <span class="icondays">.</span>
+            <span id="forecast-day">Day</span>
             <img
               width="70"
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               class="card-img"
+              id="card-img"
             />
             <div class="card-body">
-              <div>
-                <span class="celsius-max">18</span><span>º</span>
-                <span class="celsius-min">10</span><span>º</span>
+              <div id="forecast-temperature">
+                <span id="celsius-max">18</span><span>º</span>
+                <span id="celsius-min">10</span><span class="º">º</span>
               </div>
             </div>
           </div>
 
           <div class="card" style="width: 10rem" id="card">
-            <span class="icondays">.</span>
+            <span id="forecast-day">Day</span>
             <img
               width="70"
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               class="card-img"
             />
             <div class="card-body">
-              <div>
+              <div id="forecast-temperature">
                 <span class="celsius-max">18</span><span>º</span>
-                <span class="celsius-min">10</span><span>º</span>
+                <span class="celsius-min">10</span><span class="º">º</span>
               </div>
             </div>
           </div>
 
           <div class="card" style="width: 10rem" id="card">
-            <span class="icondays">.</span>
+            <span id="forecast-day">Day</span>
             <img
               width="70"
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               class="card-img"
             />
             <div class="card-body">
-              <div>
+              <div id="forecast-temperature">
                 <span class="celsius-max">18</span><span>º</span>
-                <span class="celsius-min">10</span><span>º</span>
+                <span class="celsius-min">10</span><span class="º">º</span>
               </div>
             </div>
           </div>
 
           <div class="card" style="width: 10rem" id="card">
-            <span class="icondays">.</span>
+            <span id="forecast-day">Day</span>
             <img
               width="70"
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               class="card-img"
             />
             <div class="card-body">
-              <div>
+              <div id="forecast-temperature">
                 <span class="celsius-max">18</span><span>º</span>
-                <span class="celsius-min">10</span><span>º</span>
+                <span class="celsius-min">10</span><span class="º">º</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 10rem" id="card">
+            <span id="forecast-day">Day</span>
+            <img
+              width="70"
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              class="card-img"
+            />
+            <div class="card-body">
+              <div id="forecast-temperature">
+                <span class="celsius-max">18</span><span>º</span>
+                <span class="celsius-min">10</span><span class="º">º</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 10rem" id="card">
+            <span id="forecast-day">Day</span>
+            <img
+              width="70"
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              class="card-img"
+            />
+            <div class="card-body">
+              <div id="forecast-temperature">
+                <span class="celsius-max">18</span><span>º</span>
+                <span class="celsius-min">10</span><span class="º">º</span>
               </div>
             </div>
           </div>

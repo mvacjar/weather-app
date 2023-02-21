@@ -9,24 +9,22 @@ a {
   color: #7c7c7c;
 }
 
-ul .info-description {
-  display: block;
-  margin: auto;
-  padding: auto;
-}
-
 li {
+  position: relative;
   color: #7c7c7c;
   font-size: 15px;
   height: 18px;
   line-height: 5;
   list-style: none;
+  right: 170px;
+  top: -20px;
 }
 
 .box {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.6);
   border: 0.5px solid #e7e6e6;
-  box-shadow: 0 0 0 0.1px #694620, 0.01em 0.01em 0.5em #6d4a25;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
+  backdrop-filter: blur(5px);
   display: block;
   padding: 30px;
   margin: 100px auto;
@@ -45,7 +43,7 @@ li {
 
 .city-default {
   color: #000000;
-  font-size: 33px;
+  font-size: 45px;
   font-weight: bold;
   line-height: 1.3;
 }
@@ -56,44 +54,11 @@ li {
   font-weight: 100;
   line-height: 1.3;
   margin-top: 20px;
-  margin-left: 15px;
-}
-
-.main-temperature {
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-  margin-right: 100px;
-}
-
-.weather-icon {
-  width: 75px;
-  height: 75px;
-}
-
-.main-grades {
-  position: absolute;
-  margin-top: -20px;
-  font-size: 60px;
-  margin-left: 5px;
-}
-
-#main-units {
-  position: fixed;
-  margin-left: 70px;
-}
-
-#main-units .active {
-  cursor: default;
-  color: #212121;
-}
-
-#main-units .active:hover {
-  text-decoration: none;
+  margin-left: 14px;
 }
 
 .description-forecast {
+  position: block;
   color: #7c7c7c;
   font-size: 14px;
   font-weight: 100;
@@ -101,7 +66,7 @@ li {
   margin-left: 30px;
 }
 
-.weatherForecast {
+.weather-forecast {
   display: flex;
   flex-wrap: wrap;
   place-items: center;
@@ -109,10 +74,16 @@ li {
   text-align: center;
   padding-top: 30px;
 }
+
 .card-img {
   width: auto;
   margin: auto;
   display: block;
+}
+
+#celsius-min,
+.º {
+  opacity: 0.6;
 }
 
 .sign {
@@ -128,16 +99,6 @@ li {
 
 .linkGH {
   color: #353535;
-}
-
-#card {
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-#card:hover {
-  box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
-  transition: 0.3s;
 }
 
 #search-button,
@@ -160,4 +121,48 @@ li {
 #current-button:hover {
   border-color: #eeecec;
   box-shadow: 0 0 0 0.3px #a2f3ff, 0.01em 0.01em 0.5em #eafcfe;
+}
+
+#grades {
+  position: relative;
+  top: 15px;
+  font-size: 60px;
+  font-weight: 300;
+  margin-left: -5px;
+}
+
+#main-units {
+  position: relative;
+  top: -15px;
+}
+
+#main-units .active {
+  cursor: default;
+  color: #212121;
+}
+
+#main-units .active:hover {
+  text-decoration: none;
+}
+
+#card {
+  height: 170px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+#card:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  box-shadow: 0 0 0 0.3px #70a7b0, 0.1em 0.1em 1.5em #eafcfe;
+  transition: all 300ms ease;
+}
+
+#forecast-day {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#forecast-temperature {
+  font-weight: 300;
 }
