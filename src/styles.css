@@ -21,7 +21,7 @@ li {
 }
 
 .box {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.491);
   border: 0.5px solid #e7e6e6;
   box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
   backdrop-filter: blur(5px);
@@ -72,18 +72,15 @@ li {
   place-items: center;
   justify-content: space-around;
   text-align: center;
-  /*padding-top: 10px;*/
+  padding-top: 10px;
 }
 
 .card-img {
+  position: relative;
+  top: -12px;
   width: auto;
   margin: auto;
   display: block;
-}
-
-#celsius-min,
-.º {
-  opacity: 0.6;
 }
 
 .sign {
@@ -111,9 +108,8 @@ li {
 
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: auto;
     display: block;
-    margin-bottom: 20px;
   }
 }
 
@@ -163,22 +159,39 @@ li {
 
 #card {
   height: 170px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(174, 174, 174, 0.407);
   border: none;
 }
 
 #card:hover {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(197, 243, 255, 0.39);
   border: none;
   box-shadow: 0 0 0 0.3px #70a7b0, 0.1em 0.1em 1.5em #eafcfe;
   transition: all 300ms ease;
 }
 
 #forecast-day {
+  font-weight: 100;
+  font-size: 20px;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 #forecast-temperature {
   font-weight: 300;
+  position: relative;
+  text-align: center;
+  top: -30px;
+}
+
+#celsius-max,
+.º {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#celsius-min,
+.ºº {
+  font-size: 20px;
+  font-weight: 100;
+  opacity: 0.6;
 }

@@ -58,10 +58,10 @@ function displayForecast(response) {
             <div id="forecast-temperature">
               <span id="celsius-max">${Math.round(
                 forecastDay.temp.max
-              )}</span><span>º</span>
+              )}</span><span class="º">º</span>
               <span id="celsius-min">${Math.round(
                 forecastDay.temp.min
-              )}</span><span class="º">º</span>
+              )}</span><span class="ºº">º</span>
             </div>
           </div>
         </div>
@@ -72,12 +72,6 @@ function displayForecast(response) {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-
-/*function getForecast(coordinates) {
-  let apiKey = "bc92040c41ead89e1ebda9b28b14ef5b";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon${coordinates.lon}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayForecast);
-}*/
 
 function getForecast(coordinates) {
   let apiKey = "bd3bb6534458ba51b48c49f5155745b6";
