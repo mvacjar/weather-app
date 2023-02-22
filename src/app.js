@@ -24,27 +24,28 @@ function getDate(date) {
 }
 
 function displayForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector(`#forecast`);
 
   let forecastHTML = `<div class="row">`;
-  let days = ["1", "2", "3", "4", "5", "6"];
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
   <div class="column weather-forecast" id="forecast">
         <div class="card" style="width: 10rem" id="card">
-          <span id="forecast-day">${day}</span>
+          <span id="forecast-day">${forecastDay.dt}</span>
           <img
-            width="70"
-            src="http://openweathermap.org/img/wn/"
+            width="50"
+            src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+            alt=""
             class="card-img"
             id="forecast-img"
           />
           <div class="card-body">
             <div id="forecast-temperature">
-              <span id="celsius-max"></span><span>º</span>
-              <span id="celsius-min"></span><span class="º">º</span>
+              <span id="celsius-max">${forecastDay.temp.max}</span><span>º</span>
+              <span id="celsius-min">${forecastDay.temp.min}</span><span class="º">º</span>
             </div>
           </div>
         </div>
