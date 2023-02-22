@@ -72,7 +72,7 @@ li {
   place-items: center;
   justify-content: space-around;
   text-align: center;
-  padding-top: 30px;
+  /*padding-top: 10px;*/
 }
 
 .card-img {
@@ -99,6 +99,22 @@ li {
 
 .linkGH {
   color: #353535;
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 16.6%;
+  top: 15px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 #search-button,
